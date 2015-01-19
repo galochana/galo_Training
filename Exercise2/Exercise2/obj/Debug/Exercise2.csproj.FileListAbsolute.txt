@@ -1,0 +1,13 @@
+C:\dev\galo\galo_Training\Exercise2\Exercise2\bin\Debug\Exercise2.dll.config
+C:\dev\galo\galo_Training\Exercise2\Exercise2\bin\Debug\Exercise2.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2\bin\Debug\Exercise2.pdb
+C:\dev\galo\galo_Training\Exercise2\Exercise2\bin\Debug\FluentNHibernate.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2\bin\Debug\Iesi.Collections.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2\bin\Debug\NHibernate.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2\bin\Debug\FluentNHibernate.pdb
+C:\dev\galo\galo_Training\Exercise2\Exercise2\bin\Debug\FluentNHibernate.xml
+C:\dev\galo\galo_Training\Exercise2\Exercise2\bin\Debug\Iesi.Collections.xml
+C:\dev\galo\galo_Training\Exercise2\Exercise2\bin\Debug\NHibernate.xml
+C:\dev\galo\galo_Training\Exercise2\Exercise2\obj\Debug\Exercise2.csprojResolveAssemblyReference.cache
+C:\dev\galo\galo_Training\Exercise2\Exercise2\obj\Debug\Exercise2.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2\obj\Debug\Exercise2.pdb
