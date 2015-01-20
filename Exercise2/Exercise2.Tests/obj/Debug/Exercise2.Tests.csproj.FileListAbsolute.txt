@@ -1,0 +1,16 @@
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\Exercise2.Tests.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\Exercise2.Tests.pdb
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\nunit.framework.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\Rhino.Mocks.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\nunit.framework.xml
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\Rhino.Mocks.xml
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\obj\Debug\Exercise2.Tests.csprojResolveAssemblyReference.cache
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\obj\Debug\Exercise2.Tests.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\obj\Debug\Exercise2.Tests.pdb
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\Exercise2.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\NHibernate.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\FluentNHibernate.dll
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\Exercise2.pdb
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\NHibernate.xml
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\FluentNHibernate.pdb
+C:\dev\galo\galo_Training\Exercise2\Exercise2.Tests\bin\Debug\FluentNHibernate.xml

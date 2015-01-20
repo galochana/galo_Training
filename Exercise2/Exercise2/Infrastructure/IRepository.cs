@@ -11,13 +11,7 @@ namespace Exercise2.Infrastructure
     {
         List<TEntity> GetAll();
 
-        //TEntity Get(TPrimaryKey key);
-
         void Insert(TEntity entity);
-
-        //void Update(TEntity entity);
-
-        //void Delete(TPrimaryKey id);
     }
 
     public interface IRepository

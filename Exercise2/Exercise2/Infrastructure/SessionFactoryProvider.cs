@@ -10,26 +10,6 @@ namespace Exercise2.Infrastructure
 {
     public class SessionFactoryProvider : ISessionFactoryProvider
     {
-        public NHibernate.ISession GetSession<T>()
-        {
-            throw new NotImplementedException();
-        }
-
-        public NHibernate.IStatelessSession GetStatelessSession<T>()
-        {
-            throw new NotImplementedException();
-        }
-
-        public System.Data.IDbConnection GetConnection<T>()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<NHibernate.ISessionFactory> GetFactories()
-        {
-            throw new NotImplementedException();
-        }
-
         public NHibernate.ISessionFactory GetSessionFactory()
         {
             return Fluently.Configure()

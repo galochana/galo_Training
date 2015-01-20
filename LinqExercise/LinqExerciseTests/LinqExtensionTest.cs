@@ -9,64 +9,65 @@ namespace LinqExerciseTests
     [TestFixture]
     public class LinqExtensionTest
     {
-        private IEnumerable<string> _enumerable;
-
+        
         [Test]
-        public void MyWhere_NullEnumerableAndGetResult_ThrowArgumentNullException()
+        public void MyWhere_WhenNullEnumerableAndGetResult_ThrowArgumentNullException()
         {
-           _enumerable = null;
+           IEnumerable<object> enumerable = null;
 
-            Assert.Throws<ArgumentNullException>(() => _enumerable.MyWhere(x => true).ToList());
+            Assert.Throws<ArgumentNullException>(() => enumerable.MyWhere(x => true).ToList());
         }
 
         [Test]
-        public void MyWhere_EmptyEnumerable_ReturnEmptyEnumerable()
+        public void MyWhere_WhenEmptyEnumerable_ReturnEmptyEnumerable()
         {
-            _enumerable = new List<string>();
+            var enumerable = new List<string>();
 
-            var result = _enumerable.MyWhere(x => true);
+            var result = enumerable.MyWhere(x => true);
 
             Assert.That(result, Is.Empty);
         }
 
         [Test]
-        public void MyWhere_AlwaysTruePredicate_ReturnFullEnumerable()
+        public void MyWhere_WhenPredicateAlwaysTrue_ReturnFullEnumerable()
         {
-            _enumerable = new[] {"Galo", "Sears", "Israel", "Shop", "Your", "Way"};
+            var enumerable = new[] {"Galo", "Sears", "Israel", "Shop", "Your", "Way"};
 
-            var result = _enumerable.MyWhere(x => true);
+            var result = enumerable.MyWhere(x => true);
 
-            Assert.That(result, Is.EquivalentTo(_enumerable));
+            Assert.That(result, Is.EquivalentTo(enumerable));
         }
 
-        [Test]
-        public void MyWhere_AlwaysFalsePredicate_ReturnEmptyEnumerable()
-        {
-            _enumerable = new [] { "Galo", "Sears", "Israel", "Shop", "Your", "Way" };
 
-            var result = _enumerable.MyWhere(x => false);
+        [Test]
+        public void MyWhere_WhenPredicateAlwaysFalse_ReturnEmptyEnumerable()
+        {
+            var enumerable = new [] { "Galo", "Sears", "Israel", "Shop", "Your", "Way" };
+
+            var result = enumerable.MyWhere(x => false);
 
             Assert.That(result, Is.Empty);
         }
 
         [Test]
-        public void MyWhere_SomeItemsSatisfyThePredicate_ReturnOnlyItemsThatSatisfyThePredicate()
+        public void MyWhere_WhenSomeItemsSatisfyThePredicate_ReturnOnlyItemsThatSatisfyThePredicate()
         {
-            _enumerable = new []{ "galo", "sears", "israel", "shop", "your", "way" };
+            var enumerable = new []{ "galo", "sears", "israel", "shop", "your", "way" };
+            var expected = new[] { "sears", "israel", "shop" };
             Func<string, bool> predicate = x => x.Contains('s');
-            var result = _enumerable.MyWhere(predicate);
+            
+            var result = enumerable.MyWhere(predicate);
 
             Assert.That(result.Count(), Is.EqualTo(3));
-            Assert.AreEqual(3, result.Count());
-            Assert.That(result, Is.EquivalentTo(_enumerable.Where(predicate)));
+            Assert.That(result, Is.EquivalentTo(expected));
         }
 
         [Test]
         public void MyWhere_NullPredicate_ThrowArgumentNullException()
         {
-            _enumerable = new[] {"galo", "sears", "israel", "shop", "your", "way"};
+            var enumerable = new[] {"galo", "sears", "israel", "shop", "your", "way"};
 
-            Assert.Throws<ArgumentNullException>(() => _enumerable.MyWhere(null).ToList());
+            Assert.Throws<ArgumentNullException>(() => enumerable.MyWhere(null).ToList());
         }
     }
 }
