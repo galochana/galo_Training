@@ -16,7 +16,6 @@ namespace Exercise2.Tests
         private ISessionFactory _sessionFactory;
         private ISession _session;
 
-
         private UserRepository _target;
 
         [SetUp]
