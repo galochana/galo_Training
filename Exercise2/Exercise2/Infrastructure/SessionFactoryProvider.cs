@@ -15,7 +15,7 @@ namespace Exercise2.Infrastructure
             return Fluently.Configure()
                 .Database(MySQLConfiguration.Standard
                     .ConnectionString(c => c.FromConnectionStringWithKey("Exercise2ConnectionString")))
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<User>())
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<User>().)
                 //.ExposeConfiguration(CreateSchema)
                 .BuildSessionFactory();
         }
